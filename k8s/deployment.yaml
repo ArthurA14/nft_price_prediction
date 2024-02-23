@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testapi
+spec:
+  selector:
+    matchLabels:
+      app: testapi
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: testapi
+    spec:
+      containers:
+      - name: testapi
+        image: gcr.io/data-shark-378612/testapi:v1
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: testapi
+spec:
+  type: LoadBalancer
+  selector:
+    app: testapi
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

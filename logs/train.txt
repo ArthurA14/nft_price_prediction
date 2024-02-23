@@ -1,0 +1,48 @@
+2023-01-29 23:46:01,855 - __main__ - INFO - Best params for binary classifier for classes 0 and 1: {'verbose': -1, 'objective': 'binary', 'num_leaves': 32, 'min_child_samples': 30, 'learning_rate': 0.1, 'boosting_type': 'gbdt'}
+2023-01-29 23:46:04,083 - __main__ - INFO - Best params for binary classifier for classes 1 and 2: {'verbose': -1, 'objective': 'binary', 'num_leaves': 16, 'min_child_samples': 40, 'learning_rate': 0.05, 'boosting_type': 'gbdt'}
+2023-01-29 23:46:06,082 - __main__ - INFO - Best params for binary classifier for classes 2 and 3: {'verbose': -1, 'objective': 'binary', 'num_leaves': 16, 'min_child_samples': 40, 'learning_rate': 0.15, 'boosting_type': 'gbdt'}
+2023-01-29 23:46:08,238 - __main__ - INFO - Best params for binary classifier for classes 3 and 4: {'verbose': -1, 'objective': 'binary', 'num_leaves': 32, 'min_child_samples': 20, 'learning_rate': 0.05, 'boosting_type': 'gbdt'}
+2023-01-29 23:46:08,238 - __main__ - INFO - Finished training all binary classifiers
+2023-01-29 23:46:08,263 - __main__ - INFO - Accuracy: 0.724266
+2023-01-29 23:46:08,263 - __main__ - INFO - Precision: 0.303322
+2023-01-29 23:46:08,264 - __main__ - INFO - Recall: 0.333090
+2023-01-29 23:46:08,264 - __main__ - INFO - F1 Score: 0.314346
+2023-01-29 23:46:08,266 - __main__ - INFO - Classification Report:
+
+               precision    recall  f1-score   support
+
+           0      0.824     0.739     0.779       800
+           1      0.692     0.927     0.793      1678
+           2      0.000     0.000     0.000       438
+           3      0.000     0.000     0.000        42
+           4      0.000     0.000     0.000         5
+
+    accuracy                          0.724      2963
+   macro avg      0.303     0.333     0.314      2963
+weighted avg      0.615     0.724     0.659      2963
+
+2023-01-31 14:00:18,973 - __main__ - INFO - New target distribution after resampling of class 4: 4    1246
+2    1200
+1    1200
+3    1200
+0    1200
+Name: price_label, dtype: int64
+2023-01-31 14:01:46,277 - __main__ - INFO - Best params for lgbm classifier: {'verbose': -1, 'objective': 'binary', 'num_leaves': 128, 'n_estimators': 500, 'min_child_samples': 20, 'learning_rate': 0.1, 'boosting_type': 'gbdt'}
+2023-01-31 14:01:46,297 - __main__ - INFO - Accuracy: 0.829992
+2023-01-31 14:01:46,298 - __main__ - INFO - Precision: 0.809926
+2023-01-31 14:01:46,298 - __main__ - INFO - Recall: 0.783305
+2023-01-31 14:01:46,298 - __main__ - INFO - F1 Score: 0.794487
+2023-01-31 14:01:46,300 - __main__ - INFO - Classification Report:
+
+               precision    recall  f1-score   support
+
+           0      0.997     1.000     0.998       300
+           1      0.850     0.830     0.840       300
+           2      0.694     0.757     0.724       300
+           3      0.806     0.777     0.791       300
+           4      0.703     0.553     0.619        47
+
+    accuracy                          0.830      1247
+   macro avg      0.810     0.783     0.794      1247
+weighted avg      0.832     0.830     0.830      1247
+

@@ -1,0 +1,24 @@
+2023-01-30 00:01:16,121 - __main__ - INFO - Twitter data shape: (62997, 79)
+2023-01-30 00:01:16,244 - __main__ - INFO - Opensea data shape: (62997, 47)
+2023-01-30 00:01:16,364 - __main__ - INFO - Data shape after merge: (62997, 125)
+2023-01-30 00:01:16,389 - __main__ - INFO - Data shape after filtering: (14814, 124)
+2023-01-31 13:58:57,086 - __main__ - INFO - Twitter data shape: (62997, 79)
+2023-01-31 13:58:57,216 - __main__ - INFO - Opensea data shape: (62997, 47)
+2023-01-31 13:58:57,337 - __main__ - INFO - Data shape after merge: (62997, 125)
+2023-01-31 13:58:57,399 - __main__ - INFO - New data shape after classes balancing step: (6234, 125)
+2023-01-31 13:58:57,400 - __main__ - INFO - New classes distribution: 0    1500
+1    1500
+2    1500
+3    1500
+4     234
+Name: price_label, dtype: int64
+2023-01-31 14:00:15,822 - __main__ - INFO - Twitter data shape: (62997, 79)
+2023-01-31 14:00:15,945 - __main__ - INFO - Opensea data shape: (62997, 47)
+2023-01-31 14:00:16,064 - __main__ - INFO - Data shape after merge: (62997, 125)
+2023-01-31 14:00:16,132 - __main__ - INFO - New data shape after classes balancing step: (6234, 124)
+2023-01-31 14:00:16,133 - __main__ - INFO - New classes distribution: 0    1500
+1    1500
+2    1500
+3    1500
+4     234
+Name: price_label, dtype: int64
